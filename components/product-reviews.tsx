@@ -18,8 +18,8 @@ import ANC_p_review from './ANC_ear_sort_with_refe_p.json'
 import ANC_n_review from './ANC_ear_sort_with_refe_n.json'
 import EQ_p_review from './EQ_ear_sort_with_refe_p.json'
 import EQ_n_review from './EQ_ear_sort_with_refe_n.json'
-import jbl_p_review from './jbl_ear_sort_with_refe_p.json'
-import jbl_n_review from './jbl_ear_sort_with_refe_n.json'
+import jbl_p_review from './price_ear_sort_with_refe_p.json'
+import jbl_n_review from './price_ear_sort_with_refe_n.json'
 import noise_p_review from './noisemode_ear_sort_with_refe_p.json'
 import noise_n_review from './noisemode_ear_sort_with_refe_n.json'
 import water_p_review from './amazon_water_humidifier_sort_with_refe_p.json'
@@ -30,7 +30,6 @@ import size_p_hum_review from './amazon_size_humidifier_sort_with_refe_p.json'
 import size_n_hum_review from './amazon_size_humidifier_sort_with_refe_n.json'
 import lights_p_review from './amazon_lights_humidifier_sort_with_refe_p.json'
 import lights_n_review from './amazon_lights_humidifier_sort_with_refe_n.json'
-
 
 import bear_water_p_review from "./bear_water_sort_with_refe_p.json"
 import bear_water_n_review from "./bear_water_sort_with_refe_n.json"
@@ -61,29 +60,29 @@ import TRAUST_quality_n_review from "./TRAUSI_quality_sort_with_refe_n.json"
 
 
 
-const categories = ["Earphone"] as const;
+const categories = ["Earphone","Humidifier"] as const;
 const products = {
-  "Earphone": ["JBL Noise Cancelling Headphones"],
-  // "Earphone": ["JBL Noise Cancelling Headphones","TRAUSI Open Ear Headphones"],
-  // "Humidifier": ["Bear Humidifier","pure enrichment Cool Mist Humidifier"],
+  // "Earphone": ["JBL Noise Cancelling Headphones"],
+  "Earphone": ["JBL Noise Cancelling Headphones","TRAUSI Open Ear Headphones"],
+  "Humidifier": ["Bear Humidifier","pure enrichment Cool Mist Humidifier"],
 } as const;
 
 const reviews = {
   "JBL Noise Cancelling Headphones": {
-    positive: "These JBL earbuds offer solid sound quality, clear bass, and decent mid-range, especially with the app’s EQ adjustment. While the fit may require some trial and error, and the lack of volume controls is a drawback, the app enhances functionality significantly, allowing customizable sound and noise settings. Ideal for those seeking affordable, good-quality earbuds with flexible sound options.",
-    negative: "JBL earbuds fall short with poor fit and uncomfortable tips, lack of volume control, and mediocre noise cancellation. Requires an app for basic adjustments, making them frustrating to use."
+    positive: "These earbuds offer decent noise cancelling for some users and consumer-grade sound quality, better than $20headphones but not as good as $150 IEMs. Controls lack volume adjustment by default, but the JBL app enhancesperformance with an adjustable EQ and ambient sound settings. Fit can be a bit trial and error, but once set up,they provide a solid listening experience.",
+    negative: "This JBL earbuds' sound quality harsh and metallic, potentially causing hearing loss due to theirhigh-pitched nature. The fit is less comfortable compared to Sony's, with cheaper silicon ear tips that don'tseal well. Volume controls are missing from the earbuds themselves but can be added via an app, though thisremoves noise mode adjustments. Bass response improves with tighter-fitting ear pieces, but active noisecancellation (ANC) remains mediocre. Despite JBL's reputation, these issues significantly impact user satisfaction."
   },
   "pure enrichment Cool Mist Humidifier": {
-    positive: "This humidifier impresses with its top-fill design, spacious reservoir, and compact size. It offers various mist settings and beautiful light color options, making it both functional and stylish. The easy setup allows for the use of essential oils, while the sleep mode provides a calming atmosphere with low mist and no lights. Ideal for any room, it's user-friendly and enhances your space with its soothing mist and gentle night light.",
-    negative: "Missing a piece of rubber on bottom and didn't work , water came  out the bottom."
+    positive: "The product is a well-designed humidifier that fills from the top and holds a significant amount of water withouttaking up much space. It's easy to set up and use, with a compact size and multiple mist settings, including alow setting and a sleep mode (low mist/no lights). The device also features a night light with cool color optionsand the ability to use essential oils. While cleaning required disassembling the lid and soaking parts in bleachwater, the overall experience is positive due to its simplicity, functionality, and versatile features.",
+    negative: "The product is missing a crucial rubber piece on the bottom, which causes water to leak out. As a result, the humidifier doesn't function properly, making it unusable until the issue is resolved."
   },
   "Bear Humidifier": {
-    positive: "This compact humidifier holds a large amount of water and lasts a long time. Its powerful mist effectively moistens the air, providing relief, especially during a cold. The clear plastic tank and stylish design with a physical knob are great additions. A reliable device for improved air quality and skin hydration.",
-    negative: "This humidifier is designed with a large one-gallon tank, making it easy to refill and long-lasting. It operates quietly, with minimal lighting, ensuring a peaceful environment. The mist is effective without creating any overwhelming moisture, providing a comfortable atmosphere. Perfect for those who prefer a simple, low-maintenance humidifier."
+    positive: "The humidifier features a large, clear one-gallon tank that allows for easy monitoring of water levels and infrequent refills. The device operates silently and has minimal lighting, enhancing its user-friendly design. The fine mist it produces effectively moistens the air, providing relief during colds and benefiting skin health. The humidifier's compact size, attractive color tones, and simple physical knob add to its appeal. Overall, it is a highly effective and aesthetically pleasing device.",
+    negative: "The humidifier stopping before the tank is empty, even after cleaning to remove potential calcium buildup from hard water. Despite the large tank capacity, which ensures long-lasting use, the device fails to produce a consistent mist after less than two months of nightly use. This performance is notably worse compared to similar units the user has used in the past, which effectively created a humid atmosphere in the room."
   },
   "TRAUSI Open Ear Headphones": {
-    positive: "My husband loves these.He doesn't like ear bugs that go in his ear at all.So these are perfect.There's no chords , they charge fast and last a long time These look and sound much better than I expected. They fit comfortably in my ears and the sound is similar to my more expensive ear buds These connected with ease to my phone Great quality for the price paid",
-    negative: "These earphones offer a comfortable, open-ear design that allows you to stay aware of your surroundings. The sound quality is impressive, comparable to higher-end models, making them a great option for those seeking comfort and good sound performance."
+    positive: "The reviewer's husband loves these earbuds, as they sit comfortably outside the ear without cords. They charge quickly and have a long battery life. The sound quality is impressive, comparable to more expensive options, and they connect easily to devices. Overall, the earbuds offer great value for their price.",
+    negative: "None"
   },
   "Blender": {
     positive: "Efficient and easy to clean.",
@@ -379,11 +378,11 @@ export function ProductReviewsComponent() {
                 EQ
             </button>
 
-            <button className="rounded-full py-2 px-4 bg-blue-500 text-white" 
+            <button className="rounded-full py-2 px-4 bg-red-500 text-white" 
      
-              title='positive:3 negative:5'
+              title='positive:38 negative:9'
               onClick={() => {
-                buttonClick('jbl',true);
+                buttonClick('price',true);
                 Reviews(jbl_p_review.reviews,jbl_n_review.reviews)
                 handleReviewshow(jbl_p_review.reviews,jbl_p_review.reference,jbl_n_review.reviews,jbl_n_review.reference);
               }}>
@@ -417,7 +416,7 @@ export function ProductReviewsComponent() {
             <div>
               <button className="rounded-full py-2 px-4 bg-red-500 text-white"
              
-                title='positive:11 negative:3'
+                title='positive:12 negative:2'
                 onClick={() => {
                   buttonClick('ear',true);
                   Reviews(TRAUST_ear_p_review.reviews,TRAUST_ear_n_review.reviews);
@@ -450,7 +449,7 @@ export function ProductReviewsComponent() {
 
               <button className="rounded-full py-2 px-4 bg-red-500 text-white" 
         
-                title='positive:8 negative:1'
+                title='positive:9 negative:0'
                 onClick={() => {
                   buttonClick('quality',true);
                   Reviews(TRAUST_quality_p_review.reviews,TRAUST_quality_n_review.reviews)
@@ -539,7 +538,7 @@ export function ProductReviewsComponent() {
 
             <button
               className="rounded-full py-2 px-4 bg-red-500  text-white" 
-              title='positive:15 negative:6'
+              title='positive:17 negative:4'
               onClick={() => {
                 buttonClick("mist",true)
                 Reviews(bear_mist_p_review.reviews,bear_mist_n_review.reviews)
