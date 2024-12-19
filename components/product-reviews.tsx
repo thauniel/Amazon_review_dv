@@ -61,11 +61,11 @@ import TRAUST_quality_n_review from "./TRAUSI_quality_sort_with_refe_n.json"
 
 
 
-const categories = ["Earphone"] as const;
+const categories = ["Earphone","Humidifier"] as const;
 const products = {
-  "Earphone": ["JBL Noise Cancelling Headphones"],
-  // "Earphone": ["JBL Noise Cancelling Headphones","TRAUSI Open Ear Headphones"],
-  // "Humidifier": ["Bear Humidifier","pure enrichment Cool Mist Humidifier"],
+  // "Earphone": ["JBL Noise Cancelling Headphones"],
+  "Earphone": ["JBL Noise Cancelling Headphones","TRAUSI Open Ear Headphones"],
+  "Humidifier": ["Bear Humidifier","pure enrichment Cool Mist Humidifier"],
 } as const;
 
 const reviews = {
