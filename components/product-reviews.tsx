@@ -60,7 +60,7 @@ import TRAUST_quality_n_review from "./TRAUSI_quality_sort_with_refe_n.json"
 
 
 
-const categories = ["Earphone","Humidifier"] as const;
+const categories = ["Earphone"] as const;
 const products = {
   "Earphone": ["JBL Noise Cancelling Headphones"],
   // "Earphone": ["JBL Noise Cancelling Headphones","TRAUSI Open Ear Headphones"],
